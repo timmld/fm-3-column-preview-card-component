@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url("../assets/fonts/BigShouldersDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("../assets/fonts/LexendDeca-VariableFont_wght.ttf");
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card {
+    display: flex;
+    margin: auto;
+    width: 920px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.card-column:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card-column:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-column:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.car-icon {
+    width: 70px;
+}
+
+.car-name {
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: hsl(0, 0%, 95%);
+}
+
+.car-desc {
+    margin-top: 0;
+    line-height: 1.6rem;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 4rem;
+    padding: 1rem 2rem;
+    width: fit-content;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card-column:nth-child(1) > .learn-more {
+    color: hsl(31, 77%, 52%);
+}
+
+.card-column:nth-child(2) > .learn-more {
+    color: hsl(184, 100%, 22%);
+}
+
+.card-column:nth-child(3) > .learn-more {
+    color: hsl(179, 100%, 13%);
+}
+
+.learn-more:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%) !important;
+}
+
+@media screen and (max-width: 970px) {
+    .card {
+        flex-direction: column;
+        width: 330px;
+    }
+
+    .learn-more {
+        margin-top: 1rem;
+    }
+}
